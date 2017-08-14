@@ -30,11 +30,7 @@ $(document).ready(function(){
 	//Set up RESET FUNCTION --At the start of each game!!!
 			function reset (){
 			//Computer will choose a new random number between 19-120
-
-			//TODO: THE COMPUTER CHOICE DOES NOT MATCH WHAT IS DISPLAYED ON SCREEN!!!!
 				var computerChoice = Math.floor(Math.random() * (120-19 +1)) + 19
-
-
 			//Computer choice will be displayed in the RandomNumBox
 				$("#randomNumBox").html(computerChoice)
 			//Each gem will select a random number between 1-12
@@ -81,13 +77,13 @@ $(document).ready(function(){
 		//Final Score will be displayed in the scoreBox
 				$(".scoreBox").html(finalScore);
 		//Set up conditions for winning or loosing
-				// if(finalScore===computerChoice){
-				// 	//call win function
-				// 		win();
-				// } else if (finalScore > computerChoice) {
-				// 	//call the lose function
-				// 		lose();
-				// }
+				if(finalScore===computerChoice){
+					//call win function
+						win();
+				} else if (finalScore > computerChoice) {
+					//call the lose function
+						lose();
+				}
 			})
 
 	//PURPLE GEM
@@ -97,13 +93,13 @@ $(document).ready(function(){
 		//Final Score will be displayed in the scoreBox
 				$(".scoreBox").html(finalScore);
 		//Set up conditions for winning or loosing
-				// if(finalScore===computerChoice){
-				// 	//call win function
-				// 		win();
-				// } else if (finalScore > computerChoice) {
-				// 	//call the lose function
-				// 		lose();
-				// }
+				if(finalScore===computerChoice){
+					//call win function
+						win();
+				} else if (finalScore > computerChoice) {
+					//call the lose function
+						lose();
+				}
 			})
 
 	//RED GEM
@@ -113,13 +109,13 @@ $(document).ready(function(){
 		//Final Score will be displayed in the scoreBox
 				$(".scoreBox").html(finalScore);
 		//Set up conditions for winning or loosing
-				// if(finalScore===computerChoice){
-				// 	//call win function
-				// 		win();
-				// } else if (finalScore > computerChoice) {
-				// 	//call the lose function
-				// 		lose();
-				// }
+				if(finalScore===computerChoice){
+					//call win function
+						win();
+				} else if (finalScore > computerChoice) {
+					//call the lose function
+						lose();
+				}
 			})
 
 	//BLUE GEM
@@ -129,21 +125,16 @@ $(document).ready(function(){
 		//Final Score will be displayed in the scoreBox
 				$(".scoreBox").html(finalScore);
 		//Set up conditions for winning or loosing
-				// if(finalScore===computerChoice){
-				// 	//call win function
-				// 		win();
-				// } else if (finalScore > computerChoice) {
-				// 	//call the lose function
-				// 		lose();
-				// }
+				if(finalScore===computerChoice){
+					//call win function
+						win();
+				} else if (finalScore > computerChoice) {
+					//call the lose function
+						lose();
+				}
 			})
 
-		if(finalScore===computerChoice){
-			win();
-		} else if(finalScore>computerChoice){
-			lose();
-		}
-
+	
 
 
 
@@ -195,13 +186,6 @@ $(document).ready(function(){
 
 
 }) //this is the end of the document.ready function
-
-
-
-
-
-
-
 
 
 
