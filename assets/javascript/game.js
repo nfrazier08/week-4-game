@@ -45,8 +45,7 @@ $(document).ready(function(){
 			//The win and lose messages will be hidden from the player
 				$(".winMessage").hide();
 				$(".loseMessage").hide();
-
-				} //the end of the reset function
+			} //the end of the reset function!!!!!!!!!!!!!
 					
 	//Set up a function for when the player wins
 			function win() {
