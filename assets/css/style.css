@@ -1,0 +1,51 @@
+body {
+	
+	background-image: url("C:/Users/neliz/Desktop/projects/week-4-game/assets/images/bubbles.jpg");
+	background-repeat: repeat;
+}
+
+header{
+	background-color: #00FFFF;
+}
+
+#randomNumBox{
+	background-color: maroon;
+	color:#ffffff;
+}
+
+.instruction{
+	background-color: #FFFFCC;
+}
+
+.winLoseBox{
+	background-color: pink;
+}
+
+#greenGem {
+	height:100px;
+	width: 100px;
+}
+#purpleGem {
+	height:100px;
+	width: 100px;
+}
+
+#redGem {
+	height:100px;
+	width: 100px;
+}
+
+#blueGem{
+	height:100px;
+	width: 100px;
+}
+
+.skinnyBox {
+	background-color: #556b2f;
+	color: #ffffff;
+}
+
+.scoreBox {
+	background-color: #556b2f;
+	color: #ffffff;
+}

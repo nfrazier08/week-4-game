@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+</head>
+
+<body>
+	<header><h1>Crystals Collector!</h1></header>
+
+
+	<div class="instruction">
+		<p>You will be given a random number at the start of the game.</p>
+
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+
+		<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+
+		<p>The value of each crystal is hidden from you until you click on it</p>
+
+		<p>Each time when the game starts, the game will change the valies of each crystal.</p>
+	</div>
+
+	<div id="randomNumBox">Number HERE!!</div>
+
+	<div class="winLoseBox">
+		<p class="winMessage">You Win!</p>
+		<p class="loseMessage">You Lose!</p>
+		<p>You Win</p>
+			<p class="win"> 0 </p>
+		<p>You Lose</p>
+			<p class="lose"> 0 </p>
+	</div>
+
+	<div id="buttonBox">
+		<div type="button" class="crystal1">
+			<img id="greenGem" src="assets/images/greenGem.jpg">
+
+		<div type="button" class="crystal2">
+			<img id="purpleGem" src="assets/images/purpleGem.jpg">
+
+		<div type="button" class="crystal3">
+			<img id="redGem" src="assets/images/redGem.jpg">
+
+		<div type="button" class="crystal4">
+			<img id="blueGem" src="assets/images/blueGem.jpg">
+	</div>
+
+	<div class="skinnyBox">
+		<p>Your total score is</p>
+	</div>
+
+	<div class="scoreBox"> 0 </div>
+
+
+
+<!-- Jquery link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--Javascript link -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
