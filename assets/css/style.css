@@ -18,7 +18,7 @@ header{
 #randomNumBox{
 	background-color: #FF6347;
 	color:#ffffff;
-	width:387px;
+	width:386px;
 	margin-left: 20px;
 	font-size: 35px;
 	padding:15px;
@@ -77,7 +77,7 @@ p {
 .skinnyBox {
 	background-color: #85C1E9;
 	color: #ffffff;
-	width: 320px;
+	width: 385px;
 	margin-bottom: 20px;
 	margin-top: 20px;
 	font-size: 40px;
@@ -88,10 +88,10 @@ p {
 .scoreBox {
 	background-color: #eedcfd;
 	color: #000000;
-	width:290px;
+	width:200px;
 	margin-bottom: 20px;
-	font-size: 40px;
-	padding: 30px;
+	font-size: 60px;
+	padding: 45px;
 	margin-left:20px;
 	margin-bottom: 50px;
 }
