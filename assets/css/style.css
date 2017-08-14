@@ -6,33 +6,67 @@ body {
 
 header{
 	background-color: #00FFFF;
+	font-size: 35px;
+	padding: 15px;
+	margin-left: 20px;
+	margin-top: 20px;
+	width:280px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 #randomNumBox{
-	background-color: maroon;
+	background-color: #FF6347;
 	color:#ffffff;
+	width:387px;
+	margin-left: 20px;
+	font-size: 35px;
+	padding:15px;
+	margin-bottom: 20px;
 }
 
 .instruction{
 	background-color: #FFFFCC;
+	margin-left: 20px;
+	padding:15px;
+	width:320px;
+	margin-bottom: 20px;
+}
+
+p {
+	padding:5px;
+	font-size: 18px;
 }
 
 .winLoseBox{
 	background-color: pink;
+	width:100px;
+	padding:10px;
+	margin-bottom: 20px;
+	float:right;
+	margin-right:930px;
+
 }
 
 #greenGem {
 	height:100px;
 	width: 100px;
+	float:left;
+	margin-left: 20px;
+	margin-right: 5px;
 }
 #purpleGem {
 	height:100px;
 	width: 100px;
+	float:left;
+	margin-right: 5px;
 }
 
 #redGem {
 	height:100px;
 	width: 100px;
+	float:left;
+	margin-right: 5px;
 }
 
 #blueGem{
@@ -41,11 +75,23 @@ header{
 }
 
 .skinnyBox {
-	background-color: #556b2f;
+	background-color: #85C1E9;
 	color: #ffffff;
+	width: 320px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 40px;
+	padding:15px;
+	margin-left: 20px;
 }
 
 .scoreBox {
-	background-color: #556b2f;
-	color: #ffffff;
+	background-color: #eedcfd;
+	color: #000000;
+	width:290px;
+	margin-bottom: 20px;
+	font-size: 40px;
+	padding: 30px;
+	margin-left:20px;
+	margin-bottom: 50px;
 }
