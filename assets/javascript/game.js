@@ -55,8 +55,6 @@ $(document).ready(function(){
 					$(".lose").html(lose)
 				//append final score to the scorebox
 					$(".scoreBox").html(finalScore)
-
-
 			} //the end of the reset function!!!!!!!!!!!!!
 					
 	//Set up a function for when the player wins
