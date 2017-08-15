@@ -18,7 +18,7 @@ $(document).ready(function(){
 			var blueGem = Math.floor(Math.random() * (12-1+1)) +1
 
 	//Set up counter variables to keep track of the win/lose/final score
-			var win = 0; //This will appear in winLoseBox
+			var win = 0;//This will appear in winLoseBox
 			var lose = 0;//Thiswill appear in the winLoseBox
 			var finalScore = 0; //This will appear in the scoreBox
 		//append win/lose variables to the winLoseBox
@@ -26,6 +26,12 @@ $(document).ready(function(){
 			$(".lose").html(lose)
 		//append final score to the scorebox
 			$(".scoreBox").html(finalScore)
+
+	//Set up your win/lose alerts
+		//This was originally located inside of the reset function
+		//You are testing to see if this location changes if they are hidden or not
+			$(".winMessage").hide();
+			$(".loseMessage").hide();
 
 	//Set up RESET FUNCTION --At the start of each game!!!
 			function reset (){
@@ -42,13 +48,19 @@ $(document).ready(function(){
 				finalScore = 0;
 			//Final total will be displayed in the scoreBox
 				$(".scoreBox").html(finalScore);
-			//The win and lose messages will be hidden from the player
-				$(".winMessage").hide();
-				$(".loseMessage").hide();
+			//Maybe take this out- you are testing to see if the win/lose alerts will pop up
+			//Adding these in here makes the score change in the score box
+				//append win/lose variables to the winLoseBox
+					$(".win").html(win)
+					$(".lose").html(lose)
+				//append final score to the scorebox
+					$(".scoreBox").html(finalScore)
+
+
 			} //the end of the reset function!!!!!!!!!!!!!
 					
 	//Set up a function for when the player wins
-			function win() {
+			function winGame() {
 		//The win score will go up one point
 				win++
 		//Display the 'You Win!' message to the player
@@ -58,7 +70,7 @@ $(document).ready(function(){
 			}
 
 	//Set up a function for when the player looses
-			function lose() {
+			function loseGame() {
 		//The loose score will go up one point
 				lose++
 		//Display the 'You Lose!' message to the player
@@ -78,10 +90,10 @@ $(document).ready(function(){
 		//Set up conditions for winning or loosing
 				if(finalScore===computerChoice){
 					//call win function
-						win();
+						winGame();
 				} else if (finalScore > computerChoice) {
 					//call the lose function
-						lose();
+						loseGame();
 				}
 			})
 
@@ -94,10 +106,10 @@ $(document).ready(function(){
 		//Set up conditions for winning or loosing
 				if(finalScore===computerChoice){
 					//call win function
-						win();
+						winGame();
 				} else if (finalScore > computerChoice) {
 					//call the lose function
-						lose();
+						loseGame();
 				}
 			})
 
@@ -110,10 +122,10 @@ $(document).ready(function(){
 		//Set up conditions for winning or loosing
 				if(finalScore===computerChoice){
 					//call win function
-						win();
+						winGame();
 				} else if (finalScore > computerChoice) {
 					//call the lose function
-						lose();
+						loseGame();
 				}
 			})
 
@@ -126,10 +138,10 @@ $(document).ready(function(){
 		//Set up conditions for winning or loosing
 				if(finalScore===computerChoice){
 					//call win function
-						win();
+						winGame();
 				} else if (finalScore > computerChoice) {
 					//call the lose function
-						lose();
+						loseGame();
 				}
 			})
 
@@ -142,47 +154,6 @@ $(document).ready(function(){
 		console.log("This is purpleGem " + purpleGem);
 		console.log("This is redGem " + redGem);
 		console.log("This is blueGem " + blueGem);
-
-
-		
-		
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }) //this is the end of the document.ready function
 
