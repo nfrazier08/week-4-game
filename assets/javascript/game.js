@@ -6,7 +6,7 @@ $(document).ready(function(){
 			var computerChoice = Math.floor(Math.random() * (120-19 +1)) + 19
 		//append it to the randomNumBox div
 			$("#randomNumBox").html(computerChoice)
-			console.log("This is computerChoice " + computerChoice);
+			// console.log("This is computerChoice " + computerChoice);
 
 	//Set up randomly chosen numbers for each gem
 		//math.floor(math.random() * (max-min + 1)) + min
@@ -28,8 +28,6 @@ $(document).ready(function(){
 			$(".scoreBox").html(finalScore)
 
 	//Set up your win/lose alerts
-		//This was originally located inside of the reset function
-		//You are testing to see if this location changes if they are hidden or not
 			$(".winMessage").hide();
 			$(".loseMessage").hide();
 
@@ -37,6 +35,7 @@ $(document).ready(function(){
 			function reset (){
 			//Computer will choose a new random number between 19-120
 				var computerChoice = Math.floor(Math.random() * (120-19 +1)) + 19
+				console.log("This is computerChoice " + computerChoice);
 			//Computer choice will be displayed in the RandomNumBox
 				$("#randomNumBox").html(computerChoice)
 			//Each gem will select a random number between 1-12
@@ -53,8 +52,6 @@ $(document).ready(function(){
 				//append win/lose variables to the winLoseBox
 					$(".win").html(win)
 					$(".lose").html(lose)
-				//append final score to the scorebox
-					$(".scoreBox").html(finalScore)
 			} //the end of the reset function!!!!!!!!!!!!!
 					
 	//Set up a function for when the player wins
@@ -64,7 +61,7 @@ $(document).ready(function(){
 		//Display the 'You Win!' message to the player
 				$(".winMessage").show();
 		//Call the reset function to start the game over again
-				reset ();
+				reset();
 			}
 
 	//Set up a function for when the player looses
