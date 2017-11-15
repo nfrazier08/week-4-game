@@ -39,10 +39,10 @@ $(document).ready(function(){
 			//Computer choice will be displayed in the RandomNumBox
 				$("#randomNumBox").html(computerChoice)
 			//Each gem will select a random number between 1-12
-				var greenGem = Math.floor(Math.random() * (12-1+1)) +1
-				var purpleGem = Math.floor(Math.random() * (12-1+1)) +1
-				var redGem = Math.floor(Math.random() * (12-1+1)) +1
-				var blueGem = Math.floor(Math.random() * (12-1+1)) +1
+				greenGem = Math.floor(Math.random() * (12-1+1)) +1
+				purpleGem = Math.floor(Math.random() * (12-1+1)) +1
+				redGem = Math.floor(Math.random() * (12-1+1)) +1
+				blueGem = Math.floor(Math.random() * (12-1+1)) +1
 			//Final total will be 0 
 				finalScore = 0;
 			//Final total will be displayed in the scoreBox
